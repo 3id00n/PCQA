@@ -14,4 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 # Default command: run your main script
-CMD ["python", "src/main.py"]
+CMD ["python", "src/n-jet_fitting.py"]
+# CMD ["bash", "-c", "python src/n-jet_fitting.py && python src/pcqa_demo.py"]

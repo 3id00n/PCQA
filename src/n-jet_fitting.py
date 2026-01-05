@@ -1,8 +1,8 @@
 import torch, sys, os
 import numpy as np
 sys.path.insert(0, './utils')
-sys.path.insert(0, './models')
-import DeepFit
+#sys.path.insert(0, './models')
+from models import DeepFit
 import tutorial_utils as tu
 from tqdm import tqdm
 
@@ -10,7 +10,7 @@ jet_order_fit = 3
 device = torch.device("cpu")   # force CPU
 
 def run():
-    fileList = ['./data/bunny.xyz']
+    fileList = ['./src/data/bunny.xyz']
     
     for filename in tqdm(fileList):
         print(f'# {filename}')

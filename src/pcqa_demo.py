@@ -1,6 +1,6 @@
 import sys  
 sys.path.insert(0, './utils')
-from pcqa_utils import *
+from utils.pcqa_utils import *
 
 import time, glob
 from numpy import linalg as LA
@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 fileList = [
     # './data/sample.xyz'
-    './data/bunny.xyz'
+    './src/data/bunny.xyz'
 ]
 
 class ThreadPCQA(Thread):

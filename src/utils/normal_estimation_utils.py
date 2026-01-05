@@ -9,7 +9,7 @@ import pickle
 import numpy as np
 import torch
 
-import provider
+from . import provider
 
 
 def get_gmm(points, n_gaussians, NUM_POINT, type='grid', variance=0.05, n_scales=3, D=3):

@@ -4,8 +4,8 @@ import torch.nn.parallel
 import torch.utils.data
 import numpy as np
 import torch.nn.functional as F
-import normal_estimation_utils
-import ThreeDmFVNet
+from utils import normal_estimation_utils
+from models import ThreeDmFVNet
 
 
 def fit_Wjet(points, weights, order=2, compute_neighbor_normals=False):

@@ -7,7 +7,7 @@ import tutorial_utils as tu
 from tqdm import tqdm
 
 jet_order_fit = 3
-device = torch.device("cpu")   # force CPU
+device = torch.device("cuda")   # force CPU
 
 def run():
     fileList = ['./src/data/bunny.xyz']
